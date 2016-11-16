@@ -1,8 +1,15 @@
+$kickstarter-gray : #0F2105;
+$kickstarter-green: #2BDE73 ;
 body {
   border-top: 8px solid $thoughtbot-red;
   padding-top: 130px;
 }
-
+h3{
+	font-size: 1.5em;
+}
+section li{
+	list-style: disc;
+}
 header {
   @include clearfix;
   margin-bottom: 80px;
@@ -36,6 +43,14 @@ img {
 .button--download-assets {
   @include button--with-icon;
 
+  &::before {
+    background-image: url("../images/download-icon.svg");
+  }
+}
+
+.button--kickstarter{
+  @include button--with-icon($kickstarter-gray);
+	color: $kickstarter-green;
   &::before {
     background-image: url("../images/download-icon.svg");
   }
