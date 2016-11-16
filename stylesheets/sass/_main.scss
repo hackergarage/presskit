@@ -240,3 +240,16 @@ img {
     }
   }
 }
+
+@media screen and (max-width: 600px){
+	.nav-wrap{
+		display: none;
+	}
+	.main-content-wrap{
+		margin-left:0;
+		width: 100%;
+	}
+	iframe{
+		max-width: 100%;
+	}
+}
